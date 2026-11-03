@@ -1,0 +1,257 @@
+[03.11.2026 15:32] 𝚊𝚔𝚖𝚊𝚕𝚘𝚟𝚟: * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --blue: #168cff;
+    --light: #70caff;
+    --dark: #050810;
+}
+
+body {
+    background: var(--dark);
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.background {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background:
+    radial-gradient(circle at 15% 20%, #0754a533, transparent 35%),
+    radial-gradient(circle at 85% 70%, #006aff22, transparent 35%);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 22px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #050810ed;
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid #ffffff15;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: white;
+}
+
+.logo span, h1 span {
+    color: var(--blue);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: #999;
+    text-decoration: none;
+    font-size: 13px;
+    transition: .3s;
+}
+
+nav a:hover, nav a.active {
+    color: var(--light);
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #168cff66;
+    border-radius: 30px;
+    color: var(--light);
+    background: #168cff12;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: clamp(48px, 10vw, 105px);
+    font-weight: 900;
+    letter-spacing: 5px;
+    text-shadow: 0 0 35px #168cff35;
+}
+
+.hero h2 {
+    font-size: 23px;
+    color: #aaa;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.hero p {
+    color: #888;
+    line-height: 1.9;
+    margin-top: 20px;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 27px;
+    border-radius: 9px;
+    background: var(--blue);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: .3s;
+    border: 1px solid var(--blue);
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px #168cff77;
+}
+
+.btn.outline {
+    background: transparent;
+    color: var(--light);
+}
+
+.scroll {
+    margin-top: 90px;
+    color: #555;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.page {
+    max-width: 1100px;
+    min-height: 75vh;
+    margin: auto;
+    padding: 90px 30px;
+    text-align: center;
+}
+
+.page h1 {
+    font-size: clamp(38px, 7vw, 75px);
+    margin-bottom: 45px;
+}
+
+.panel {
+    background: linear-gradient(145deg, #101a2c, #080d18);
+    border: 1px solid #168cff30;
+    border-radius: 18px;
+    padding: 35px;
+    margin: 20px 0;
+    text-align: left;
+    transition: .4s;
+    box-shadow: 0 15px 50px #0004;
+}
+
+.panel:hover {
+    border-color: var(--blue);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 35px #168cff22;
+}
+
+.panel h2 {
+    color: var(--light);
+    margin-bottom: 20px;
+}
+
+.panel p {
+    color: #999;
+    line-height: 1.9;
+    margin-bottom: 12px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.number {
+    color: var(--blue);
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.contact {
+    max-width: 800px;
+}
+
+.contact .panel {
+    text-align: center;
+}
+
+footer {
+    padding: 30px 15px;
+    text-align: center;
+    color: #555;
+    border-top: 1px solid #ffffff12;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+@media(max-width: 750px) {
+    header {
+        justify-content: center;
+        padding: 18px 10px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 13px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .page {
+        padding: 65px 18px;
+    }
+[03.11.2026 15:32] 𝚊𝚔𝚖𝚊𝚕𝚘𝚟𝚟: .panel {
+        padding: 25px 20px;
+    }
+}
+
+@media(max-width: 380px) {
+    nav {
+        gap: 10px;
+    }
+}
